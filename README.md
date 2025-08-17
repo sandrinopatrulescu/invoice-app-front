@@ -37,3 +37,12 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Creation
+
+```bash
+npm create vue@latest
+# Select features to include in your project: TypeScript, Router (SPA development), Pinia (state management), ESLint (error prevention), Prettier (code formatting)
+# Select experimental features to include in your project: none
+# Skip all example code and start with a blank Vue project? Yes
+```

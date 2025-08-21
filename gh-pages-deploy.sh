@@ -15,6 +15,7 @@ fi
 VITE_BASE_URL=/invoice-app-front/ npm run build-only
 rsync -av dist/ "${directoryPath}"/
 cd "${directoryPath}"
+cp index.html 404.html
 git add -A
 git commit -m "deploy: $(date -Ins)"
 git push origin "${branchName}"

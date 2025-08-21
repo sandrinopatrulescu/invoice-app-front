@@ -4,6 +4,7 @@ set -e # abort on errors
 
 
 branchName="gh-pages"
+repoName="$(basename -s .git "$(git config --get remote.origin.url)")"
 directoryPath="../${PWD##*/}_gh-pages"
 
 if [ ! -d "${directoryPath}" ]; then
@@ -11,8 +12,7 @@ if [ ! -d "${directoryPath}" ]; then
   exit 1
 fi
 
-
-VITE_BASE_URL=/invoice-app-front/ npm run build-only
+VITE_BASE_URL="/${repoName}/" npm run build-only
 rsync -av dist/ "${directoryPath}"/
 cd "${directoryPath}"
 cp index.html 404.html

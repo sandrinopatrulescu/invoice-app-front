@@ -2,7 +2,7 @@
 
 <template>
   <UApp>
-    <h1>hello, world!</h1>
+    <RouterView />
   </UApp>
 </template>
 

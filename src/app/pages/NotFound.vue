@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <h1>The resource you're looking found doesn't exist</h1>
+  <UContainer class="flex justify-center">
+    <div class="text-2xl">{{ $t('app.page.not-found') }}</div>
+  </UContainer>
 </template>
 
 <style scoped></style>

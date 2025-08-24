@@ -1,0 +1,1 @@
+import{d as t,c as n,t as r,o as c}from"./index-C__VHKH9.js";const p=t({__name:"InvoiceEditor",props:{id:{}},setup(e){const o=e;return(i,s)=>(c(),n("h1",null,"invoice editor "+r(o.id||"ADD"),1))}});export{p as default};

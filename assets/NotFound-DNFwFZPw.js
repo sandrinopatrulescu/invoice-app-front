@@ -1,0 +1,1 @@
+import{a,w as c,_ as r,o as _,b as f,t as i}from"./index-C__VHKH9.js";const l=(t,o)=>{const e=t.__vccOpts||t;for(const[s,n]of o)e[s]=n;return e},p={},d={class:"text-2xl"};function u(t,o){const e=r;return _(),a(e,{class:"flex justify-center"},{default:c(()=>[f("div",d,i(t.$t("app.page.not-found")),1)]),_:1})}const m=l(p,[["render",u]]);export{m as default};
